@@ -1,0 +1,28 @@
+test_factorial (__main__.TestExercice) ... ERROR
+test_prefixes (__main__.TestExercice) ... ok
+test_summation (__main__.TestExercice) ... FAIL
+
+======================================================================
+ERROR: test_factorial (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 44, in test_factorial
+    output = [exercice.factorial(v) for v in values]
+  File "test_exercice.py", line 44, in <listcomp>
+    output = [exercice.factorial(v) for v in values]
+  File "/home/runner/work/c01_ch5_exercices-manuts987/c01_ch5_exercices-manuts987/exercice.py", line 39, in factorial
+    return factorial
+UnboundLocalError: local variable 'factorial' referenced before assignment
+
+======================================================================
+FAIL: test_summation (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 38, in test_summation
+    'Retrait du mauvais caractère'
+AssertionError: 2500 != 24133 : Retrait du mauvais caractère
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1, errors=1)
